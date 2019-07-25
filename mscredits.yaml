@@ -2,7 +2,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: mscredits
-  namespace: prod
+  namespace: default
 spec:
   ports:
   - name: http
@@ -22,7 +22,7 @@ metadata:
   labels:
     app: mscredits
   name: mscredits
-  namespace: prod
+  namespace: default
 spec:
   replicas: 1
   selector:
